@@ -2,7 +2,7 @@ name: "external API action"
 
 description: "use am external API to retrieve and display a joke"
 
-outputs:
+outputs:  
   joke-output:
     description: The resulting joke from icanhazdadjokes API
 
