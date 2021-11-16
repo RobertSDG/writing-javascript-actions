@@ -1,0 +1,16 @@
+name: "I have issues"
+
+description: "consume output of previous action and create new issue in repository"
+
+inputs:
+  joke:
+    description: "this will become the body of the created issue"
+  issue-title:
+    description: "every issue needs a title, its nice to supply one, even though this can be done dynamically within the code"
+    required: true
+  repo-token:
+    description: "Token with permissions to do repo things"
+
+runs:
+  using: "node12"
+  main: "main.js"
