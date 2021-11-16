@@ -8,7 +8,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
+
       - name: hello-action
         uses: ./.github/actions/hello-world
-        with:
-          third-greeting: "Learning Lab User"
+
+      - name: ha-ha
+        uses: ./.github/actions/joke-action
